@@ -1,0 +1,72 @@
+footer {
+    width: 100vw;
+    height: 25vh;
+    text-align: center;
+    background-color: $black;
+    color: $gray;
+    font-size: 1.5em;
+    margin-bottom: 0;
+
+    #social {
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    a {
+        color: $gray;
+        font-size: 1em;
+
+        .next {
+            position: absolute;
+            right: 10px;
+        }
+
+        .previous {
+            position: absolute;
+            left: 10px;
+        }
+
+        &:hover {
+            color: $purple;
+        }
+    }
+
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 22vh;
+    right: 20px;
+    z-index: 99;
+    font-size: 3em;
+    height: 56px;
+    border: none;
+    outline: none;
+    color: $gray;
+    cursor: pointer;
+    padding: 15px;
+
+    &:hover {
+        color: $purple;
+    }
+}
+
+@media (max-width: 600px) {
+
+    footer {
+        height: 26vh;
+
+        .mail {
+            display: none;
+        }
+
+        .copy {
+            font-size: 1em;
+        }
+    }
+
+
+}

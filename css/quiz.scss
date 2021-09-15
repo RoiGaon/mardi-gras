@@ -1,0 +1,69 @@
+@import 'variable';
+@import 'header';
+@import 'footer';
+
+.container1 {
+
+    .quiz {
+        border: $green 3px solid;
+        padding: 10px 40px 40px 40px;
+        background-color: lighten($green, 40%);
+        width: 70%;
+
+        h4 {
+            font-family: $henny-penny;
+        }
+
+        h3 {
+            font-family: $henny-penny;
+            text-align: center;
+        }
+
+        .label {
+            font-family: $roboto;
+        }
+
+        small {
+            font-family: $roboto;
+            font-size: 1.1em;
+            font-weight: bold;
+            visibility: hidden;
+        }
+
+        .MyForm.Correct small {
+            visibility: visible;
+            color: darken($green, 10%);
+        }
+
+        .MyForm.unCorrect small {
+            visibility: visible;
+            color: maroon;
+        }
+
+        input[type="reset"] {
+            float: right;
+        }
+    }
+
+}
+
+
+@media (max-width:600px) {
+    .container1 {
+        width: 100vw;
+
+        .quiz {
+            width: 80vw;
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .container1 {
+        width: 100vw;
+
+        .quiz {
+            width: 100vw;
+        }
+    }
+}

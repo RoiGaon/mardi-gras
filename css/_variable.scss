@@ -1,0 +1,38 @@
+$black:#0D0D0D;
+$gray:#F2F2F2;
+$yellow:#F2CC0F;
+$green:#8CBF3F;
+$purple:#9453A6;
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+$pattaya:'Pattaya';
+$roboto:'Roboto',
+sans-serif;
+$henny-penny:'Henny Penny, cursive';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+    background-color: lighten($color: #9453A6, $amount: 20);
+
+    a {
+        font-family: $roboto;
+    }
+
+    p {
+        font-family: $roboto;
+        font-size: 1.5em;
+    }
+
+    h {
+        font-family: $pattaya;
+    }
+
+}

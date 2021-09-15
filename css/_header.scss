@@ -1,0 +1,54 @@
+header {
+    text-align: center;
+
+    .navbar-brand {
+        padding-top: 20px;
+        text-align: center;
+        font-family: $pattaya;
+        font-size: 3em;
+        color: $yellow;
+
+        img[alt="mardi gras logo"] {
+            width: 100px;
+            height: 100px;
+        }
+
+    }
+
+    nav {
+        font-family: $pattaya;
+        background-color: $green;
+
+        ul {
+            li {
+                margin-right: 1em;
+
+                a {
+                    font-size: 1.3em;
+                    font-family: $roboto;
+                    font-family: $pattaya;
+
+                    &:hover {
+                        background-color: $yellow !important;
+                        color: $purple !important;
+                        border-radius: 5px !important;
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+
+}
+
+@media (max-width:600px) {
+    header {
+
+        .navbar-brand {
+            font-size: 1.5em;
+        }
+    }
+}

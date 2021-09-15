@@ -1,0 +1,75 @@
+@import 'variable';
+@import 'header';
+@import 'footer';
+
+.container {
+    .row {
+
+        img {
+            width: 12vw;
+            height: 8vw;
+            background-color: $gray;
+            padding: 2px;
+            border: 2px solid $black;
+
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
+
+    }
+
+    h3 {
+        font-family: $pattaya;
+        text-align: center;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .container {
+        .row {
+
+            img {
+                width: 15vw;
+                height: 10vw;
+                background-color: $gray;
+                padding: 2px;
+                border: 2px solid $black;
+            }
+        }
+
+    }
+}
+
+@media (max-width:770px) {
+    .container {
+        .row {
+
+            img {
+                width: 75vw;
+                height: 50vw;
+                background-color: $gray;
+                padding: 2px;
+                border: 2px solid $black;
+            }
+        }
+
+    }
+}
+
+@media (max-width:600px) {
+    .container {
+        .row {
+
+            img {
+                width: 84vw;
+                height: 56vw;
+                background-color: $gray;
+                padding: 2px;
+                border: 2px solid $black;
+            }
+        }
+
+    }
+}

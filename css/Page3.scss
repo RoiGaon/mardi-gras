@@ -1,0 +1,33 @@
+@import 'variable';
+@import 'header';
+@import 'footer';
+
+.container {
+
+    .accordion-item {
+        margin: 10px;
+        border-radius: 20px;
+        background-color: lighten($purple, 20%);
+
+        h2 {
+            font-family: $henny-penny;
+            border-radius: 20px;
+            color: lighten($purple, 20%);
+        }
+
+        .accordion-button {
+            border-radius: 20px;
+            background-color: $green;
+            color: $black;
+            font-weight: bold;
+        }
+
+        .accordion-body {
+            font-family: $roboto;
+            border-radius: 20px;
+            background-color: lighten($yellow, 20%);
+            color: lighten($purple, 20%);
+            font-weight: bold;
+        }
+    }
+}

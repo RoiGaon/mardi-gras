@@ -1,0 +1,168 @@
+@import 'variable';
+@import 'header';
+@import 'footer';
+
+.hiddenImage {
+    img[alt="mardi gras festival 1"] {
+        display: none;
+    }
+}
+
+.CaruselContainer {
+    margin: 10px auto;
+
+    p {
+        font-family: $henny-penny;
+        font-size: 2em;
+    }
+
+    img {
+        height: 80vh;
+        border-radius: 5%;
+    }
+
+}
+
+.container {
+    justify-content: center;
+    align-items: space-evenly;
+
+    .CardsContainer1,
+    .CardsContainer2 {
+
+        .card {
+            background-color: $gray;
+            margin: 20px;
+
+            img {
+                height: 150px;
+                border-radius: 5%;
+            }
+
+            h5 {
+                font-size: 2em;
+                font-family: $pattaya;
+            }
+
+            p {
+                font-size: 1.5em;
+                font-family: $roboto;
+            }
+        }
+
+    }
+
+    section {
+        text-align: justify;
+
+        h1 {
+            font-size: 4em;
+            font-family: $pattaya;
+            color: $yellow;
+        }
+
+        p {
+            font-size: 2em;
+            font-family: $roboto;
+            color: darken($color: #8CBF3F, $amount: 30);
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .CaruselContainer {
+        #carouselExampleFade {
+            display: none;
+        }
+    }
+
+    .hiddenImage {
+        img[alt="mardi gras festival 1"] {
+            display: block;
+            width: 50vw;
+            border-radius: 5%;
+            margin: 10px auto;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+
+        p {
+            text-align: left;
+        }
+
+        section1 {
+            order: 1;
+        }
+
+        .card1,
+        .card2,
+        .card3,
+        .card4 {
+            order: 2;
+        }
+
+    }
+}
+
+@media (max-width: 650px) {
+
+    .container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            text-align: left;
+        }
+
+        section1 {
+            margin-left: 5px;
+            order: 1;
+
+            h1 {
+                text-align: left;
+            }
+        }
+
+        .card {
+            p {
+                display: none;
+            }
+        }
+
+        .card1,
+        .card2,
+        .card3,
+        .card4 {
+            order: 2;
+        }
+
+        section2 {
+            margin-left: 5px;
+            order: 3;
+
+            h1 {
+                text-align: left;
+            }
+        }
+
+        .card5,
+        .card6,
+        .card7,
+        .card8 {
+            order: 4;
+        }
+
+    }
+
+    .navbar .container {
+        display: flex;
+        flex-direction: row !important;
+    }
+}

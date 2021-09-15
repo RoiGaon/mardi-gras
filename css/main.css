@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+  background-color: #bf95ca;
+}
+
+body a {
+  font-family: "Roboto", sans-serif;
+}
+
+body p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+}
+
+body h {
+  font-family: "Pattaya";
+}
+
+header {
+  text-align: center;
+}
+
+header .navbar-brand {
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Pattaya";
+  font-size: 3em;
+  color: #F2CC0F;
+}
+
+header .navbar-brand img[alt="mardi gras logo"] {
+  width: 100px;
+  height: 100px;
+}
+
+header nav {
+  font-family: "Pattaya";
+  background-color: #8CBF3F;
+}
+
+header nav ul li {
+  margin-right: 1em;
+}
+
+header nav ul li a {
+  font-size: 1.3em;
+  font-family: "Roboto", sans-serif;
+  font-family: "Pattaya";
+}
+
+header nav ul li a:hover {
+  background-color: #F2CC0F !important;
+  color: #9453A6 !important;
+  border-radius: 5px !important;
+}
+
+@media (max-width: 600px) {
+  header .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
+footer {
+  width: 100vw;
+  height: 25vh;
+  text-align: center;
+  background-color: #0D0D0D;
+  color: #F2F2F2;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+footer #social img {
+  width: 32px;
+  height: 32px;
+}
+
+footer a {
+  color: #F2F2F2;
+  font-size: 1em;
+}
+
+footer a .next {
+  position: absolute;
+  right: 10px;
+}
+
+footer a .previous {
+  position: absolute;
+  left: 10px;
+}
+
+footer a:hover {
+  color: #9453A6;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 22vh;
+  right: 20px;
+  z-index: 99;
+  font-size: 3em;
+  height: 56px;
+  border: none;
+  outline: none;
+  color: #F2F2F2;
+  cursor: pointer;
+  padding: 15px;
+}
+
+#myBtn:hover {
+  color: #9453A6;
+}
+
+@media (max-width: 600px) {
+  footer {
+    height: 26vh;
+  }
+  footer .mail {
+    display: none;
+  }
+  footer .copy {
+    font-size: 1em;
+  }
+}
+
+.hiddenImage img[alt="mardi gras festival 1"] {
+  display: none;
+}
+
+.CaruselContainer {
+  margin: 10px auto;
+}
+
+.CaruselContainer p {
+  font-family: "Henny Penny, cursive";
+  font-size: 2em;
+}
+
+.CaruselContainer img {
+  height: 80vh;
+  border-radius: 5%;
+}
+
+.container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+}
+
+.container .CardsContainer1 .card,
+.container .CardsContainer2 .card {
+  background-color: #F2F2F2;
+  margin: 20px;
+}
+
+.container .CardsContainer1 .card img,
+.container .CardsContainer2 .card img {
+  height: 150px;
+  border-radius: 5%;
+}
+
+.container .CardsContainer1 .card h5,
+.container .CardsContainer2 .card h5 {
+  font-size: 2em;
+  font-family: "Pattaya";
+}
+
+.container .CardsContainer1 .card p,
+.container .CardsContainer2 .card p {
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+}
+
+.container section {
+  text-align: justify;
+}
+
+.container section h1 {
+  font-size: 4em;
+  font-family: "Pattaya";
+  color: #F2CC0F;
+}
+
+.container section p {
+  font-size: 2em;
+  font-family: "Roboto", sans-serif;
+  color: #384c19;
+}
+
+@media (max-width: 1000px) {
+  .CaruselContainer #carouselExampleFade {
+    display: none;
+  }
+  .hiddenImage img[alt="mardi gras festival 1"] {
+    display: block;
+    width: 50vw;
+    border-radius: 5%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container p {
+    text-align: left;
+  }
+  .container section1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .container .card1,
+  .container .card2,
+  .container .card3,
+  .container .card4 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container p {
+    text-align: left;
+  }
+  .container section1 {
+    margin-left: 5px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .container section1 h1 {
+    text-align: left;
+  }
+  .container .card p {
+    display: none;
+  }
+  .container .card1,
+  .container .card2,
+  .container .card3,
+  .container .card4 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .container section2 {
+    margin-left: 5px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .container section2 h1 {
+    text-align: left;
+  }
+  .container .card5,
+  .container .card6,
+  .container .card7,
+  .container .card8 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .navbar .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */

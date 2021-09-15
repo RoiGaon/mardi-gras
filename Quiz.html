@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="shortcut icon" href="pics/crown-icon.png">
+    <link rel="stylesheet" href="css/quiz.css">
+
+    <title>JS Bin</title>
+</head>
+
+<body>
+    <header>
+        <a class="navbar-brand" href="index.html" href="top" id="current"><img src="pics/logo2021.png"
+                alt="mardi gras logo" id="logo">Mardi Gras New Orleans</a>
+        <nav class="navbar navbar-expand-lg navbar-light mb-5">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="page1.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="page2.html">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="page3.html">Q&A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="page4.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Quiz.html">Quiz</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container container1 mb-5">
+        <form class="quiz">
+            <input class="btn btn-outline-dark" type="reset" value="clear">
+            <h4>1. What is the day before Mardi Gras called?</h4>
+            <div class="MyForm">
+                <!-- Answer: b -->
+                <input type="checkbox">
+                <label class="label">a: Mardi Gras</label>
+                <br>
+                <input type="checkbox" id="answer1">
+                <label class="label">b: Lundi Gras</label>
+                <br>
+                <input type="checkbox">
+                <label class="label">c: Prepering Day</label>
+                <br>
+                <small>something</small>
+                <br></div>
+            <h4>2. What day comes after Mardi Gras?</h4>
+            <div class="MyForm">
+                <!-- Answer: c -->
+                <input type="checkbox">
+                <label class="label">a: Lundi Gras</label>
+                <br>
+                <input type="checkbox">
+                <label class="label">b: Mardi Day</label>
+                <br>
+                <input type="checkbox" id="answer2">
+                <label class="label">c: Ash Wednesday</label>
+                <br>
+                <small>something</small>
+                <br></div>
+            <h4>3. Where was the first known carnival celebration?</h4>
+            <div class="MyForm">
+                <!-- Answer: a -->
+                <input type="checkbox" id="answer3">
+                <label class="label">a: Nice, France</label>
+                <br>
+                <input type="checkbox">
+                <label class="label">b: New Orleans, Lusiana</label>
+                <br>
+                <input type="checkbox">
+                <label class="label">c: Tel Aviv, Israel</label>
+                <br>
+                <small>something</small>
+                <br></div>
+            <h4>4. When was the earliest known carnival celebration?</h4>
+            <div class="MyForm">
+                <!-- Answer: c -->
+                <input type="checkbox">
+                <label class="label">a: 1300</label>
+                <br>
+                <input type="checkbox">
+                <label class="label">b: 1498</label>
+                <br>
+                <input type="checkbox" id="answer4">
+                <label class="label">c: 1294</label>
+                <br>
+                <small>something</small>
+                <br></div>
+            <h4>5. What is the signature Mardi Gras dessert?</h4>
+            <div class="MyForm">
+                <!-- Answer: a -->
+                <input type="checkbox" id="answer5">
+                <label class="label">a: King cake</label>
+                <br>
+                <input type="checkbox">
+                <label class="label">b: Queen cake</label>
+                <br>
+                <input type="checkbox">
+                <label class="label">c: Prince cake</label>
+                <br>
+                <small>something</small>
+                <br></div>
+            <h4>6. Before the COVID-19 pandemic, when was the most recent cancellation of New Orleans’ Mardi Gras
+                parades?
+            </h4>
+            <div class="MyForm">
+                <!-- Answer: c -->
+                <input type="checkbox">
+                <label class="label">a: 1294</label>
+                <br>
+                <input type="checkbox">
+                <label class="label">b: 1498</label>
+                <br>
+                <input type="checkbox" id="answer6">
+                <label class="label">c: 1945</label>
+                <br>
+                <small>something</small>
+                <br></div>
+            <h4>7. What is traditionally hidden inside a king cake?</h4>
+            <div class="MyForm">
+                <!-- Answer: b -->
+                <input type="checkbox">
+                <label class="label">a: A plastic apple</label>
+                <br>
+                <input type="checkbox" id="answer7">
+                <label class="label">b: A plastic baby</label>
+                <br>
+                <input type="checkbox">
+                <label class="label">c: A plastic clown</label>
+                <br>
+                <small>something</small>
+                <br></div>
+            <h4>8. A man dressed as whom was credited with popularizing throwing beadsduring Mardi Gras?</h4>
+            <div class="MyForm">
+                <!-- Answer: b -->
+                <input type="checkbox">
+                <label class="label">a: The King</label>
+                <br>
+                <input type="checkbox" id="answer8">
+                <label class="label">b: Santa Claus</label>
+                <br>
+                <input type="checkbox">
+                <label class="label">c: The Prince</label>
+                <br>
+                <small>something</small>
+                <br></div>
+            <h4>9. What are the groups that organize New Orleans Mardi Gras parades called?</h4>
+            <div class="MyForm">
+                <!-- Answer: a -->
+                <input type="checkbox" id="answer9">
+                <label class="label">a: Krewes</label>
+                <br>
+                <input type="checkbox">
+                <label class="label">b: Group</label>
+                <br>
+                <input type="checkbox">
+                <label class="label">c: Gang</label>
+                <br>
+                <small>something</small>
+                <br></div>
+            <h4>10. Bacchus is the Roman god of what?</h4>
+            <div class="MyForm">
+                <!-- Answer: c -->
+                <input type="checkbox">
+                <label class="label">a: Vodka</label>
+                <br>
+                <input type="checkbox">
+                <label class="label">b: Beer</label>
+                <br>
+                <input type="checkbox" id="answer10">
+                <label class="label">c: Wine</label>
+                <br>
+                <small>something</small>
+                <br>
+                <input class="btn btn-outline-dark mt-1 mb-4" type="button" value="Check Answer"></div>
+            <h3></h3>
+        </form>
+    </div>
+
+    <footer>
+        <div id="myBtn"><a href="#top" title="top">&#8593;</a></div>
+        <div id="social">
+            <a href="https://www.facebook.com/MardiGrasNewOrleans" target="_blank"><img src="pics/facebookIcon.png"
+                    alt="facebookIcon" title="facebook"></a>
+            <a href="https://www.instagram.com/mardigrasneworleans/" target="_blank"><img src="pics/instagramIcon.png"
+                    alt="instagramIcon" title="instagram"></a>
+            <a href="https://twitter.com/MardiGrasNOLA" target="_blank"><img src="pics/twitterIcon.png"
+                    alt="twitterIcon" title="twitter"></a>
+            <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" target="_blank"><img
+                    src="pics/youtubeIcon.png" alt="youtubeIcon" title="youtube"></a>
+        </div>
+        <a class="mail" href="mailto:roigaon@gmail.com">contact us for more questions</a>
+        <br>
+        <p class="copy">&copy; Created By: Roi Gaon!</p>
+
+        <a href="page4.html"><span class="previous">&laquo; Previous </span></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <!-- <script src="js/quiz.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/MyQuiz.js"></script>
+</body>
+
+</html>
